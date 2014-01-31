@@ -10,7 +10,14 @@
  */
 class Nano_Placeholder {
 
-	private $settings = array();
+	private $settings = array(
+		"default" => array(
+			"background_color" => "CCCCCC",
+			"text_color" => "666666",
+			"image" => false,
+			"text" => false
+		)
+	);
 
 	public function config_loaded(&$settings) {
 		if (isset($settings["nano_placeholder"])) {
